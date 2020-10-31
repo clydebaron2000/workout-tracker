@@ -16,7 +16,9 @@ router.put("/api/workouts/:id", (req, res) => {
   });
 });
 router.post("/api/workouts", ({ body }, res) => {
+  console.log("create");
   Workout.create(body).then(dbTransaction => {
+    console.log(dbTransaction);
     res.json(dbTransaction);
   }).catch(err => {
     res.status(400).json(err);
