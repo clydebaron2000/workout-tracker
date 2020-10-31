@@ -5,7 +5,7 @@ mongoose.connect("mongodb://localhost/workout", {
   useFindAndModify: false
 });
 let workoutSeed = [{
-  day: new Date().setDate(new Date().getDate() - 10),
+  day: new Date(new Date().setDate(new Date().getDate() - 10)),
   exercises: [{
     type: "resistance",
     name: "Bicep Curl",
@@ -15,7 +15,7 @@ let workoutSeed = [{
     sets: 4
   }]
 }, {
-  day: new Date().setDate(new Date().getDate() - 9),
+  day: new Date(new Date().setDate(new Date().getDate() - 9)),
   exercises: [{
     type: "resistance",
     name: "Lateral Pull",
@@ -25,7 +25,7 @@ let workoutSeed = [{
     sets: 4
   }]
 }, {
-  day: new Date().setDate(new Date().getDate() - 8),
+  day: new Date(new Date().setDate(new Date().getDate() - 8)),
   exercises: [{
     type: "resistance",
     name: "Push Press",
@@ -35,7 +35,7 @@ let workoutSeed = [{
     sets: 4
   }]
 }, {
-  day: new Date().setDate(new Date().getDate() - 7),
+  day: new Date(new Date().setDate(new Date().getDate() - 7)),
   exercises: [{
     type: "cardio",
     name: "Running",
@@ -43,7 +43,7 @@ let workoutSeed = [{
     distance: 4
   }]
 }, {
-  day: new Date().setDate(new Date().getDate() - 6),
+  day: new Date(new Date().setDate(new Date().getDate() - 6)),
   exercises: [{
     type: "resistance",
     name: "Bench Press",
@@ -53,7 +53,7 @@ let workoutSeed = [{
     sets: 4
   }]
 }, {
-  day: new Date().setDate(new Date().getDate() - 5),
+  day: new Date(new Date().setDate(new Date().getDate() - 5)),
   exercises: [{
     type: "resistance",
     name: "Bench Press",
