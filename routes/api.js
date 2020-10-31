@@ -1,9 +1,5 @@
 const router = require("express").Router();
 const db = require("../models");
-
-function addDays(date, days) {
-  return new Date(date.getFullYear(), date.getMonth(), date.getDate() + days, date.getHours(), date.getMinutes(), date.getSeconds(), date.getMilliseconds());
-}
 router.get("/api/workouts", (req, res) => {
   db.Workout.find({}).sort({ date: -1 }).then(dbWorkout => {
     res.json(dbWorkout);
