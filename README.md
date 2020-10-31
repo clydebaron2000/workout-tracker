@@ -28,11 +28,7 @@ Deployed application available [here](https://workout-tracker-cbr.herokuapp.com/
 
 ## Usage
 
-Utilizing this project locally allows the program to  view and modify tables from a database set up in `MySQL Workbench`. 
-To set up for usage open a query file in `MySQL Workbench` and copy paste the starter values in `seed.sql`.
-
-Then, enter the local server data in `connection.js`.
-
+Utilizing this project allows to track your workouts via the deployable website.
 ## License
 
 © 2020 [Clyde Baron Rapinan](https://github.com/clydebaron2000). Under the [MIT](https://opensource.org/licenses/MIT) license.
